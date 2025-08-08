@@ -25,7 +25,7 @@
                     <h1 style="margin: 0; font-size: 18px; font-weight: bold;">Koperasi Stanley</h1>
                 </div>
                 <div class="col-3 text-right">
-                    <img src="<?= asset('logo/logo.webp')?>" class="img-fluid img-rounded" alt="Profile" style="max-height: 50px;">
+                    <img src="<?= asset('default_profil.webp')?>" class="img-fluid img-rounded" alt="Profile" style="max-height: 50px;">
                 </div>
             </div>
         </div>
