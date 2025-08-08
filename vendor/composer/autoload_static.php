@@ -112,7 +112,7 @@ class ComposerStaticInit58a439baa63ce317551a65cb5db0a5b6
         ),
         'Bpjs\\Core\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/core',
+            0 => __DIR__ . '/../..' . '/src/Core',
         ),
         'App\\' => 
         array (

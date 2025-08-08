@@ -15,7 +15,7 @@
             "App\\": "app/",
             "Config\\": "config/",
             "Helpers\\": "app/helpers/",
-            "Bpjs\\Core\\":"src/core/",
+            "Bpjs\\Core\\":"src/Core/",
             "Middlewares\\":"app/Middleware/"
         }
     },
