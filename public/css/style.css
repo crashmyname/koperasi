@@ -213,6 +213,7 @@ label {
     padding: 20px;
     padding: 80px 15px 80px; /* atas 80px biar tidak ketimpa header, bawah 80px buat navbar */
     text-align: center;
+    z-index: 1;
 }
 .menu-card {
     background: #fff;
@@ -261,9 +262,11 @@ label {
     background: white;
     border-top: 1px solid #ccc;
     padding: 8px 0;
+    height: 60px; /* contoh tinggi */
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 9999;
 }
 .nav-item {
     color: #888;

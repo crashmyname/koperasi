@@ -17,15 +17,15 @@
 <body>
     <div class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="<?= asset('logo/logo.webp')?>" class="img-fluid img-rounded mb-1"  alt="Foto">
+            <div class="row align-center" style="align-items: center;">
+                <div class="col-3 text-left">
+                    <img src="<?= asset('logo/logo.webp')?>" class="img-fluid img-rounded" alt="Logo" style="max-height: 50px;">
                 </div>
-                <div class="col-6">
-                    <h1>Koperasi Stanley</h1>
+                <div class="col-6 text-center">
+                    <h1 style="margin: 0; font-size: 18px; font-weight: bold;">Koperasi Stanley</h1>
                 </div>
-                <div class="col-3">
-                    <img src="<?= asset('logo/logo.webp')?>" class="img-fluid"  alt="Foto">
+                <div class="col-3 text-right">
+                    <img src="<?= asset('logo/logo.webp')?>" class="img-fluid img-rounded" alt="Profile" style="max-height: 50px;">
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
         <nav class="bottom-nav">
             <a href="#" 
             class="nav-item" 
-            hx-get="<?= url('')?>" 
+            hx-get="<?= url('home')?>" 
             hx-target="#content" 
             hx-push-url="true">
                 <i class="fa-solid fa-house"></i>

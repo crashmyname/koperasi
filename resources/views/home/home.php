@@ -23,19 +23,27 @@
 <hr>
 <div class="menu-card">
     <div class="menu-grid">
-        <a href="#" class="menu-item">
+        <a hx-get="<?= url('saldo')?>" 
+            hx-target="#content" 
+            hx-push-url="true" class="menu-item">
             <i class="fa-solid fa-wallet"></i>
             <span>Saldo</span>
         </a>
-        <a href="#" class="menu-item">
+        <a hx-get="<?= url('pinjaman')?>" 
+            hx-target="#content" 
+            hx-push-url="true" class="menu-item">
             <i class="fa-solid fa-hand-holding-dollar"></i>
             <span>Pinjaman</span>
         </a>
-        <a href="#" class="menu-item">
+        <a hx-get="<?= url('shu')?>" 
+            hx-target="#content" 
+            hx-push-url="true" class="menu-item">
             <i class="fa-solid fa-sack-dollar"></i>
             <span>SHU</span>
         </a>
-        <a href="#" class="menu-item">
+        <a hx-get="<?= url('laporan')?>" 
+            hx-target="#content" 
+            hx-push-url="true" class="menu-item">
             <i class="fa-solid fa-chart-line"></i>
             <span>Laporan</span>
         </a>
