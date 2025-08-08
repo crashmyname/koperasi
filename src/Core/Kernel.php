@@ -7,7 +7,7 @@ use Helpers\Route;
 class Kernel
 {
     protected array $middleware = [
-        \Helpers\CorsMiddleware::class,
+        \Helpers\CORSMiddleware::class,
     ]; 
     protected string $dispatcherType = 'web';
 
