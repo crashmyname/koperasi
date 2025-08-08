@@ -196,10 +196,21 @@ class BaseController {
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://';
         $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 
-        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
-        $basePath = str_replace('/index.php', '', $scriptName);
+        $documentRoot = $_SERVER['DOCUMENT_ROOT'] ?? null;
+        $physicalBasePath = BPJS_BASE_PATH;
 
-        return rtrim($protocol . $host . $basePath, '/') . '/';
+        if ($documentRoot) {
+            $documentRoot = realpath($documentRoot);
+            $relativePath = str_replace('\\', '/', str_replace($documentRoot, '', $physicalBasePath));
+            $relativePath = '/' . trim($relativePath, '/');
+        } else {
+            $relativePath = '/' . trim(basename($physicalBasePath), '/');
+        }
+        if ($relativePath === '/') {
+            $relativePath = '';
+        }
+
+        return $protocol . $host . $relativePath . '/';
     }
 
     public function arrayGet($array, $key, $default)
